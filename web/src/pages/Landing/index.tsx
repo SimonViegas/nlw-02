@@ -7,6 +7,7 @@ import studyIcon from '../../assets/images/icons/study.svg'
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg'
 import puppleHertIcon from '../../assets/images/icons/purple-heart.svg'
 
+import './style.css';
 
 
 function Landing() {
@@ -31,14 +32,14 @@ function Landing() {
             Estudar
           </a>
 
-          <a href="" className="study">
+          <a href="" className="give-classes">
             <img src={giveClassesIcon} alt="Estudar"/>
             Estudar
           </a>
         </div>
 
         <span className="total-connections">
-            Total de 200 conexões já realizadas <img src={puppleHertIcon} alt=""/>
+            Total de 200 conexões já realizadas <img src={puppleHertIcon} alt="Coração roxo"/>
         </span>
       </div>
     </div>
