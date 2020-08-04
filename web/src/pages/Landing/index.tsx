@@ -1,5 +1,5 @@
 import React from 'react';
-// Para não precisa recarregar a página
+// Para não precisa recarregar a página (SPA)
 import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg'
