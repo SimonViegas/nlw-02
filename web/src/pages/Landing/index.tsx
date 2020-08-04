@@ -1,4 +1,6 @@
 import React from 'react';
+// Para não precisa recarregar a página
+import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg'
 import ladingImg from '../../assets/images/landing.svg'
@@ -27,15 +29,15 @@ function Landing() {
         />
 
         <div className="buttons-container">
-          <a href="" className="study">
+          <Link to="/study" className="study">
             <img src={studyIcon} alt="Estudar"/>
             Estudar
-          </a>
+          </Link>
 
-          <a href="" className="give-classes">
+          <Link to="/give-classes" className="give-classes">
             <img src={giveClassesIcon} alt="Dar aulas"/>
             Dar aulas
-          </a>
+          </Link>
         </div>
 
         <span className="total-connections">
