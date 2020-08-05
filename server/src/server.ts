@@ -1,12 +1,9 @@
 import express from 'express';
+import routes from './routes';
 
 const app = express();
 
 app.use(express.json());
-
-app.get('/users', (request, response) => {
-  console.log('Acessou a rota "users"');
-  return response.send('Acessou a rota "users"');
-})
+app.use(routes);
 
 app.listen(3333);
