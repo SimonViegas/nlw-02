@@ -10,7 +10,7 @@ function TeacherItem() {
       <img src="https://avatars0.githubusercontent.com/u/33127367?s=460&v=4" alt="Simon Viegas"/>
       <div>
         <strong>Simon Viegas</strong>
-        <span>Java Script</span>
+        <span>Developer</span>
       </div>
     </header>
     <p>
