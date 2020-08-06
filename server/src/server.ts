@@ -1,8 +1,10 @@
 import express from 'express';
+import cors from 'cors';
 import routes from './routes';
 
 const app = express();
 
+app.use(cors()); // permitir que aplicações de endereços diferentes acessem a API
 app.use(express.json());
 app.use(routes);
 
