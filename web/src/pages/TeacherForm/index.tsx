@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
+import TextArea from '../../components/TextArea';
 import warningIcon from '../../assets/images/icons/warning.svg';
 
 import './style.css'
@@ -20,6 +21,7 @@ function TeacherForm() {
           <Input name="name" label="Nome completo"/>
           <Input name="avatar" label="Avatar"/>
           <Input name="whatsapp" label="Whatsapp"/>
+          <TextArea name="bio" label="Biografia" />
         </fieldset>
 
         <fieldset>
