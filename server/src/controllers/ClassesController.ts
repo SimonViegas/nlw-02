@@ -40,7 +40,6 @@ export default class ClassesController {
           .whereRaw('`class_schedule`.`week_day` = ??', [Number(week_day)])
           .whereRaw('`class_schedule`.`from` <= ??', [timeInMinuts])
           .whereRaw('`class_schedule`.`to` > ??', [timeInMinuts]);
-
       })
       .where('classes.subject', '=', subject)
       .join('users', 'classes.user_id', '=', 'users.id')
@@ -105,5 +104,12 @@ export default class ClassesController {
         erro: "Unexpected erro while creating new class",
       })
     }
+  }
+
+  async totalConections(request: Request, response: Response) {
+    console.log('### Acessou a rota Get "/totalConections"');
+
+    return response.send('aaaaaaaaa');
+    
   }
 }
