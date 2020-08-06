@@ -26,6 +26,41 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
 
         {props.children}
       </div>
+
+      <main>
+        <fieldset>
+          <legend>Seus dados</legend>
+          <div className="input-block">
+            <label htmlFor="name">Nome completo</label>
+            <input type="text" id="name"/>
+          </div>
+          <div className="input-block">
+            <label htmlFor="avatar">Avatar</label>
+            <input type="text" id="avatar"/>
+          </div>
+          <div className="input-block">
+            <label htmlFor="whatsapp">Whatsapp</label>
+            <input type="text" id="whatsapp"/>
+          </div>
+        </fieldset>
+
+       <fieldset>
+          <legend>Seus dados</legend>
+          <div className="input-block">
+            <label htmlFor="name">Nome completo</label>
+            <input type="text" id="name"/>
+          </div>
+          <div className="input-block">
+            <label htmlFor="avatar">Avatar</label>
+            <input type="text" id="avatar"/>
+          </div>
+          <div className="input-block">
+            <label htmlFor="whatsapp">Whatsapp</label>
+            <input type="text" id="whatsapp"/>
+          </div>
+        </fieldset>
+
+      </main>
       </header>
   );
 }
